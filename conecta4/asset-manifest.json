@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./conecta4/static/css/main.1c99c138.css",
-    "main.js": "./conecta4/static/js/main.cd482a67.js",
-    "static/js/453.5882df86.chunk.js": "./conecta4/static/js/453.5882df86.chunk.js",
-    "index.html": "./conecta4/index.html",
-    "main.1c99c138.css.map": "./conecta4/static/css/main.1c99c138.css.map",
-    "main.cd482a67.js.map": "./conecta4/static/js/main.cd482a67.js.map",
-    "453.5882df86.chunk.js.map": "./conecta4/static/js/453.5882df86.chunk.js.map"
+    "main.css": "/Portfolio/conecta4/static/css/main.1c99c138.css",
+    "main.js": "/Portfolio/conecta4/static/js/main.a0b32455.js",
+    "static/js/453.5882df86.chunk.js": "/Portfolio/conecta4/static/js/453.5882df86.chunk.js",
+    "index.html": "/Portfolio/conecta4/index.html",
+    "main.1c99c138.css.map": "/Portfolio/conecta4/static/css/main.1c99c138.css.map",
+    "main.a0b32455.js.map": "/Portfolio/conecta4/static/js/main.a0b32455.js.map",
+    "453.5882df86.chunk.js.map": "/Portfolio/conecta4/static/js/453.5882df86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c99c138.css",
-    "static/js/main.cd482a67.js"
+    "static/js/main.a0b32455.js"
   ]
 }
