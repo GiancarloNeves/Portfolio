@@ -7,29 +7,35 @@
   --gap: 1rem;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+}
 
 body {
-  margin: 0;
   padding: 2rem;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background: var(--bg);
   color: #0f1724;
   position: relative; 
+  line-height: 1.5;
 }
 
 #titulo {
   text-align: center;
   font-size: 2rem;
-  margin: 0 0 0.25rem 0;
-  line-height: 1.1;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
 }
 
 #autor {
   text-align: center;
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
   color: var(--muted);
   font-size: 0.95rem;
 }
@@ -47,7 +53,6 @@ body {
   box-shadow: 0 6px 18px rgba(16,24,40,0.06);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(16,24,40,0.04);
- 
 }
 
 .lang-img {
@@ -58,22 +63,24 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: 1px solid rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.lang-img:focus,
-.lang-img:hover {
+.lang-img:hover,
+.lang-img:focus-visible {
   transform: translateY(-2px);
   outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 #projetos-cont {
   max-width: 940px;
-  margin: 2rem 0 0 2rem;
+  margin: 2rem auto 0 auto;
   padding: 0;
 }
 
 #projetos-titulo {
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   text-align: left;
 }
@@ -88,7 +95,7 @@ body {
 }
 
 #projetos-cont h3 {
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
 }
 
@@ -99,15 +106,17 @@ body {
   border-radius: 6px;
   border: 1px solid rgba(31,111,235,0.12);
   color: var(--accent);
-  transition: transform .12s ease, background .12s ease, color .12s ease;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
   font-weight: 500;
 }
 
-#projetos-cont a:hover {
+#projetos-cont a:hover,
+#projetos-cont a:focus-visible {
   background: var(--accent);
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(31,111,235,0.12);
+  outline: none;
 }
 
 @media (max-width: 700px) {
@@ -121,10 +130,13 @@ body {
     width: 28px;
     height: 18px;
   }
-  #projetos-cont { margin-left: 0; margin-top: 1.25rem; }
+  #projetos-cont {
+    margin: 1.25rem auto 0 auto;
+  }
 }
 
 @media (min-width: 1200px) {
   body { padding: 3rem 4rem; }
   #titulo { font-size: 2.4rem; }
 }
+

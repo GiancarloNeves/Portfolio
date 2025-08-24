@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+  <title>Portfólio - Giancarlo Juliao Neves Peixoto</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1 id="titulo">Bem-vindo ao meu portfólio!</h1>
-  <p id="autor">Autor: Giancarlo Juliao Neves Peixoto</p>
+  <header>
+    <h1 id="titulo">Bem-vindo ao meu portfólio!</h1>
+    <p id="autor">Autor: Giancarlo Juliao Neves Peixoto</p>
 
-  <div id="lang-selector" role="navigation" aria-label="Selecionar idioma">
-    <img class="lang-img" src="imagens/pt.png" alt="Português">
-    <img class="lang-img" src="imagens/en.jpg" alt="English">
-  </div>
+    <nav id="lang-selector" aria-label="Selecionar idioma">
+      <button>
+        <img class="lang-img" src="imagens/pt.png" alt="Português">
+      </button>
+      <button>
+        <img class="lang-img" src="imagens/en.jpg" alt="English">
+      </button>
+    </nav>
+  </header>
 
-  <div id="projetos-cont">
-    <h2 id="projetos-titulo">Meus projetos:</h2>
+  <main>
+    <section id="projetos-cont">
+      <h2 id="projetos-titulo">Meus projetos:</h2>
 
-    <div class="project">
-      <h3>Jogos:</h3>
-      <a href="./conecta4/index.html">Conecta 4</a>
+      <article class="project">
+        <h3>Jogos</h3>
+        <a href="./conecta4/index.html">Conecta 4</a>
+      </article>
 
-    </div>
-
-    <div class="project">
-      <h3>Websites:</h3>
-      
-    </div>
-  </div>
+      <article class="project">
+        <h3>Websites</h3>
+        <a href="#">(em breve)</a>
+      </article>
+    </section>
+  </main>
 </body>
-
 </html>
