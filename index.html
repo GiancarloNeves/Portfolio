@@ -1,49 +1,194 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Giancarlo Juliao Neves Peixoto</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="apple-touch-icon" href="imagens/icon.png" sizes="180x180">
-  <link rel="icon" href="imagens/icon.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="imagens/icon.png" type="image/png" sizes="16x16">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Giancarlo Julião Neves Peixoto</title>
+  <meta name="description" content="Professional portfolio of Giancarlo Julião Neves Peixoto — software developer. English and Portuguese versions." />
+  <link rel="stylesheet" href="styles.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-  <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre_mim.html">Sobre mim</a></li>
-          <li><a href="projetos_e_certificados.html">Projetos e certificados</a></li>
-          <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-
-        <div id="lang-selector">
-          <button id="btn-pt">
-            <img class="lang-img" src="imagens/pt.png" alt="Português">
-          </button>
-          <button id="btn-en">
-            <img class="lang-img" src="imagens/en.jpg" alt="English">
-          </button>
+  <div class="container">
+    <header class="cabecalho">
+      <a class="marca" href="#">
+        <div class="logo" aria-hidden>GP</div>
+        <div class="brand-text">
+          <div class="brand-name">Giancarlo Julião Neves Peixoto</div>
+          <div class="brand-sub">Computer Engineer specialized in Information Systems student</div>
         </div>
-    </nav>
+      </a>
 
+      <nav class="navegacao" aria-label="Main navigation">
+        <a href="#sobre" data-pt="Sobre" data-en="About">About</a>
+        <a href="#habilidades" data-pt="Habilidades" data-en="Skills">Skills</a>
+        <a href="#projetos" data-pt="Projetos" data-en="Projects">Projects</a>
+        <a href="#contato" data-pt="Contato" data-en="Contact">Contact</a>
+      </nav>
 
-    
+      <div class="acoes">
+        <button class="btn" id="btn-idioma" aria-pressed="false">EN / PT</button>
+        <a class="btn btn-primary" href="#contato" data-pt="Contratar" data-en="Hire me">Hire me</a>
+      </div>
+    </header>
 
-    <h1 id="titulo">Bem-vindo ao meu portfólio!</h1>
-    <p id="autor">Autor: Giancarlo Juliao Neves Peixoto</p>
-    
-    <div class="construcao-banner" role="status" aria-live="polite">
-  🔧 Site em construção — voltamos em breve!
-    </div>
+    <main>
+      <section class="hero">
+        <div class="cartao">
+          <h1 class="titulo-principal" data-pt="Olá — eu sou Giancarlo Julião Neves Peixoto" data-en="Hi — I'm Giancarlo Julião Neves Peixoto">Hi — I'm Giancarlo Julião Neves Peixoto</h1>
+          <p class="subtitulo" data-pt="Procuro oportunidades para aplicar meus conhecimentos — seja em projetos de desenvolvimento, em equipas que valorizem a tecnologia como motor de mudança ou em iniciativas colaborativas que aliem lógica, criatividade e impacto real." data-en="I am seeking opportunities to apply this knowledge — whether in development projects, in teams that value technology as a driver of change, or in collaborative initiatives that combine logic, creativity, and real-world impact.">I am seeking opportunities to apply this knowledge — whether in development projects, in teams that value technology as a driver of change, or in collaborative initiatives that combine logic, creativity, and real-world impact.</p>
 
-  
-  </header>
+          <div class="tags" aria-hidden>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Html</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
 
-  
+          <section class="highlights">
+            <h2 class="secao-titulo" data-pt="Destaques" data-en="Highlights">Highlights</h2>
+            <div class="highlights-list">
+              <div class="highlight">
+                <strong>5+</strong>
+                <div class="muted" data-pt="projetos em produção" data-en="projects in production">projects in production</div>
+              </div>
+              <div class="highlight">
+                <strong>Part-time</strong>
+                <div class="muted" data-pt="Disponível para trabalho" data-en="Open for work part time">Open for work part time</div>
+              </div>
+            </div>
+          </section>
+
+          <div class="actions-row">
+            <a class="btn" href="#projetos" data-pt="Ver projetos" data-en="See projects">See projects</a>
+            <a class="btn" href="mailto:giancarlojuliao@gmail.com" data-pt="Enviar e-mail" data-en="Email me">Email me</a>
+          </div>
+        </div>
+
+        <aside class="perfil" aria-label="Developer profile">
+          <div class="avatar" role="img" aria-label="Stylized avatar">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#7c5cff" />
+                  <stop offset="1" stop-color="#4ad0ff" />
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="#061221" />
+              <g transform="translate(30,28)">
+                <rect rx="14" width="140" height="140" fill="url(#g1)" opacity="0.12" />
+                <circle cx="70" cy="54" r="30" fill="#061221" stroke="#ffffff22" stroke-width="2" />
+                <rect x="40" y="95" width="60" height="32" rx="6" fill="#061221" stroke="#ffffff12" />
+              </g>
+            </svg>
+          </div>
+          <div class="nome">Giancarlo Julião Neves Peixoto</div>
+          <div class="cargo" data-pt="Desenvolvedor Fullstack" data-en="Fullstack Developer">Fullstack Developer</div>
+          <div class="rede-social" aria-hidden>
+            <a class="icone-redes" href="https://github.com/GiancarloNeves" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a class="icone-redes" href="https://www.linkedin.com/in/giancarlo-peixoto-7b6331380/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a class="icone-redes" href="mailto:giancarlojuliao@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="full-width">
+            <a class="btn btn-primary" id="cv-link" href="#" data-pt="Baixar CV" data-en="Download CV">Download CV</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="sobre" class="cartao">
+        <h2 class="secao-titulo" data-pt="Sobre mim" data-en="About me">About me</h2>
+        <div class="sobre-grid">
+          <div>
+            <p data-pt="Sou estudante do 3.º ano da Licenciatura em Engenharia Informática – Ramo de Sistemas de Informação, em Coimbra. Concluí o ensino secundário em Ciências Socioeconómicas, o que me permitiu desenvolver uma visão analítica e uma base sólida em matemática e economia. Atualmente, combino essa perspetiva com os conhecimentos técnicos adquiridos na área da informática, focando-me no estudo de sistemas de informação que apoiam a estratégia empresarial, a inovação, a tomada de decisão nas organizações, bem como no aprofundamento de bases de dados e Inteligência Artificial." data-en="I am a third-year student pursuing a Bachelor’s degree in Computer Engineering – Information Systems track in Coimbra. I completed secondary education in Socioeconomic Sciences, which allowed me to develop an analytical mindset and a solid foundation in mathematics and economics. Currently, I combine this perspective with the technical knowledge acquired in the field of computer science, focusing on the study of information systems that support business strategy, innovation, and organizational decision-making, as well as deepening my expertise in databases and Artificial Intelligence.">I am a third-year student pursuing a Bachelor’s degree in Computer Engineering – Information Systems track in Coimbra. I completed secondary education in Socioeconomic Sciences, which allowed me to develop an analytical mindset and a solid foundation in mathematics and economics. Currently, I combine this perspective with the technical knowledge acquired in the field of computer science, focusing on the study of information systems that support business strategy, innovation, and organizational decision-making, as well as deepening my expertise in databases and Artificial Intelligence.</p>
+
+            <ul class="muted-list">
+              <li data-pt="Local: Coimbra, Portugal" data-en="Location: Coimbra, Portugal">Location: Coimbra, Portugal</li>
+              <li data-pt="Disponibilidade: Part-time / Contrato" data-en="Availability: Part-time / Contract">Availability: Part-time / Contract</li>
+              <li data-pt="Contato: giancarlojuliao@gmail.com" data-en="Contact: giancarlojuliao@gmail.com">Contact: giancarlojuliao@gmail.com</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="tool-list">
+              <strong data-pt="Ferramentas favoritas" data-en="Favorite tools">Favorite tools</strong>
+              <div class="habilidades">
+                <div class="habilidade">C</div>
+                <div class="habilidade">Html</div>
+                <div class="habilidade">CSS</div>
+                <div class="habilidade">JavaScript</div>
+              </div>
+            </div>
+
+            <!-- Nova seção Linguagens que estou aprendendo -->
+            <div class="tool-list">
+              <strong data-pt="Linguagens que estou aprendendo" data-en="Languages I'm learning">Languages I'm learning</strong>
+              <div class="habilidades">
+                <div class="habilidade">Python</div>
+                <div class="habilidade">SQL</div>
+                <div class="habilidade">Linux/Unix (Debian)</div>
+                <div class="habilidade">C++</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades">
+        <h2 class="secao-titulo" data-pt="Habilidades técnicas" data-en="Technical skills">Technical skills</h2>
+        <div class="cartao">
+          <div class="habilidades">
+            <div class="habilidade">JavaScript / TypeScript</div>
+            <div class="habilidade">React / Next.js</div>
+            <div class="habilidade">Node.js / Express</div>
+            <div class="habilidade">Python / FastAPI</div>
+            <div class="habilidade">DevOps (Docker, CI/CD)</div>
+            <div class="habilidade">Cloud (AWS, GCP)</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <h2 class="secao-titulo" data-pt="Projetos selecionados" data-en="Selected projects">Selected projects</h2>
+        <div class="projetos-grid">
+          <!-- Projetos já existentes -->
+          ...
+        </div>
+      </section>
+
+      <section id="contato" class="cartao">
+        <h2 class="secao-titulo" data-pt="Contato" data-en="Contact">Contact</h2>
+        <form class="form-contato" action="mailto:giancarlojuliao@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Form submitted (simulation)')">
+          <div class="campo">
+            <label for="nome" data-pt="Nome" data-en="Name">Name</label>
+            <input id="nome" name="nome" placeholder="Giancarlo Julião Neves Peixoto" data-pt-placeholder="Seu nome" data-en-placeholder="Your name" />
+          </div>
+          <div class="campo">
+            <label for="email" data-pt="E-mail" data-en="Email">Email</label>
+            <input id="email" name="email" type="email" placeholder="giancarlojuliao@gmail.com" data-pt-placeholder="Seu e-mail" data-en-placeholder="Your email" />
+          </div>
+          <div class="campo">
+            <label for="mensagem" data-pt="Mensagem" data-en="Message">Message</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Olá, tenho interesse..." data-pt-placeholder="Escreva sua mensagem" data-en-placeholder="Write your message"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" data-pt="Enviar" data-en="Send">Send</button>
+            <button type="reset" class="btn" data-pt="Limpar" data-en="Clear">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="ano"></span> Giancarlo Julião Neves Peixoto — <span data-pt="Feito em Portugal" data-en="Made in Portugal">Made in Portugal</span></div>
+    </footer>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
+

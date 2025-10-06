@@ -1,39 +1,51 @@
-const translations = {
-  pt: {
-    titulo: "Bem-vindo ao meu portfólio!",
-    autor: "Autor: Giancarlo Juliao Neves Peixoto",
-    projetosTitulo: "Meus projetos:",
-    jogos: "Jogos",
-    conecta4: "Conecta 4",
-    websites: "Websites",
-    emBreve: "(em breve)"
-  },
-  en: {
-    titulo: "Welcome to my portfolio!",
-    autor: "Author: Giancarlo Juliao Neves Peixoto",
-    projetosTitulo: "My projects:",
-    jogos: "Games",
-    conecta4: "Connect 4",
-    websites: "Websites",
-    emBreve: "(coming soon)"
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.getElementById('btn-idioma');
+  var idioma = localStorage.getItem('idioma') || 'en';
+
+  function setLanguage(lang) {
+    var els = document.querySelectorAll('[data-pt]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      var pt = el.getAttribute('data-pt');
+      var en = el.getAttribute('data-en') || pt;
+      el.textContent = lang === 'pt' ? pt : en;
+    }
+
+    var phEls = document.querySelectorAll('[data-pt-placeholder]');
+    for (var j = 0; j < phEls.length; j++) {
+      var el = phEls[j];
+      var pt = el.getAttribute('data-pt-placeholder');
+      var en = el.getAttribute('data-en-placeholder') || pt;
+      el.placeholder = lang === 'pt' ? pt : en;
+    }
+
+    btn.setAttribute('aria-pressed', lang === 'en');
+    btn.textContent = lang === 'pt' ? 'PT / EN' : 'EN / PT';
+    localStorage.setItem('idioma', lang);
   }
-};
 
-function setLanguage(lang) {
-  document.getElementById("titulo").textContent = translations[lang].titulo;
-  document.getElementById("autor").textContent = translations[lang].autor;
-  document.getElementById("projetos-titulo").textContent = translations[lang].projetosTitulo;
+  btn.addEventListener('click', function () {
+    idioma = idioma === 'pt' ? 'en' : 'pt';
+    setLanguage(idioma);
+  });
 
-  const projectHeaders = document.querySelectorAll("#projetos-cont .project h3");
-  projectHeaders[0].textContent = translations[lang].jogos;
-  projectHeaders[1].textContent = translations[lang].websites;
+  setLanguage(idioma);
 
-  const projectLinks = document.querySelectorAll("#projetos-cont .project a");
-  projectLinks[0].textContent = translations[lang].conecta4;
-  projectLinks[1].textContent = translations[lang].emBreve;
-}
+  var ano = document.getElementById('ano');
+  if (ano) {
+    ano.textContent = new Date().getFullYear();
+  }
+});
 
-setLanguage("pt");
+document.addEventListener("DOMContentLoaded", () => {
+  const cvLink = document.getElementById("cv-link");
+  if (!cvLink) return;
 
-document.getElementById("btn-pt").addEventListener("click", () => setLanguage("pt"));
-document.getElementById("btn-en").addEventListener("click", () => setLanguage("en"));
+  const lang = document.documentElement.lang;
+
+  if (lang === "pt") {
+    cvLink.href = "caminho/para/seu_cv_pt.pdf"; // edite com o caminho certo
+  } else if (lang === "en") {
+    cvLink.href = "caminho/para/seu_cv_en.pdf"; // edite com o caminho certo
+  }
+});
