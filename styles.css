@@ -123,3 +123,18 @@ a:focus,a.btn:focus,input:focus,textarea:focus{outline:3px solid rgba(124,92,255
   grid-column: 1 / -1;
 }
 
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
