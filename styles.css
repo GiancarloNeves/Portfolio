@@ -111,3 +111,15 @@ a:focus,a.btn:focus,input:focus,textarea:focus{outline:3px solid rgba(124,92,255
 .muted-list{color:var(--muted)}
 .no-top{margin-top:0}
 .form-actions{grid-column:1/-1;display:flex;gap:8px;justify-content:flex-end}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; 
+  gap: 18px;
+}
+
+.skills-full {
+  grid-column: 1 / -1;
+}
+
