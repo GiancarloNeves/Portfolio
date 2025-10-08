@@ -36,16 +36,3 @@ document.addEventListener('DOMContentLoaded', function () {
     ano.textContent = new Date().getFullYear();
   }
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const cvLink = document.getElementById("cv-link");
-  if (!cvLink) return;
-
-  const lang = document.documentElement.lang;
-
-  if (lang === "pt") {
-    cvLink.href = "caminho/para/seu_cv_pt.pdf"; // edite com o caminho certo
-  } else if (lang === "en") {
-    cvLink.href = "caminho/para/seu_cv_en.pdf"; // edite com o caminho certo
-  }
-});
