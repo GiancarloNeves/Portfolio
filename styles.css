@@ -138,3 +138,46 @@ a:focus,a.btn:focus,input:focus,textarea:focus{outline:3px solid rgba(124,92,255
   object-fit: cover;
   display: block;
 }
+
+.projetos-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projetos-grid h4 {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.projetos-grid h4 a {
+  display: block;
+  text-align: center;
+}
+
+.projetos-grid img {
+  display: block;
+  width: 300px;
+  max-width: 300px;
+  height: 150px;
+  margin: 12px 0 0;
+  border-radius: 10px;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  width: 100%;
+}
+
+#projetos h3 a {
+  text-decoration: none;
+  color: #e4e1e1;
+}
+
+#projetos h3 a:hover {
+  color: #0077ff;
+}
