@@ -1,197 +1,303 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portfolio — Giancarlo Julião Neves Peixoto</title>
-  <meta name="description" content="Professional portfolio of Giancarlo Julião Neves Peixoto — software developer. English and Portuguese versions." />
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content="Giancarlo Julião Neves Peixoto — Computer Engineering student exploring applied AI, business systems, and product implementation." data-pt-content="Giancarlo Julião Neves Peixoto — estudante de Engenharia Informática interessado em IA aplicada, sistemas de negócio e implementação de produto." data-en-content="Giancarlo Julião Neves Peixoto — Computer Engineering student exploring applied AI, business systems, and product implementation."> 
+  <title data-pt-title="Giancarlo Peixoto — IA Aplicada e Sistemas de Informação" data-en-title="Giancarlo Peixoto — Applied AI &amp; Information Systems">Giancarlo Peixoto — Applied AI &amp; Information Systems</title> 
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <div class="container">
-    <header class="cabecalho">
-      <a class="marca" href="#">
-        <div class="logo" aria-hidden>GP</div>
-        <div class="brand-text">
-          <div class="brand-name">Giancarlo Julião Neves Peixoto</div>
-          <div class="brand-sub" data-pt="Estudante de Engenharia Informática — Sistemas de Informação" data-en="Computer Engineering Student — Information Systems">
-            Computer Engineering Student — Information Systems
-          </div>
-        </div>
-      </a>
+</head> 
+<body> 
+  <a class="skip-link" href="#main" data-pt="Ir para o conteúdo" data-en="Skip to content">Skip to content</a> 
 
-      <nav class="navegacao" aria-label="Main navigation">
-        <a href="#sobre" data-pt="Sobre" data-en="About">About</a>
-        <a href="#projetos" data-pt="Projetos" data-en="Projects">Projects</a>
-        <a href="#contato" data-pt="Contato" data-en="Contact">Contact</a>
+  <div class="page-layout">
+    <div class="side-rail">
+      <nav class="section-nav" aria-label="Navegação por secção" data-pt-aria="Navegação por secção" data-en-aria="Section navigation">
+        <a class="section-nav-link is-active" href="#top" data-section-link="top" aria-current="location"><span class="section-nav-number">01</span><span data-pt="Início" data-en="Home">Home</span></a>
+        <a class="section-nav-link" href="#work" data-section-link="work"><span class="section-nav-number">02</span><span data-pt="Projetos" data-en="Projects">Projects</span></a>
+        <a class="section-nav-link" href="#about" data-section-link="about"><span class="section-nav-number">03</span><span data-pt="Sobre" data-en="About">About</span></a>
+        <a class="section-nav-link" href="#contact" data-section-link="contact"><span class="section-nav-number">04</span><span data-pt="Contato" data-en="Contact">Contact</span></a>
       </nav>
+    </div>
 
-      <div class="acoes">
-        <button class="btn" id="btn-idioma" aria-pressed="false">EN / PT</button>
-        <a class="btn btn-primary" href="#contato" data-pt="Contratar" data-en="Hire me">Hire me</a>
-      </div>
-    </header>
+    <div class="site-shell">
+    <header class="site-header"> 
+      <a class="wordmark" href="#top" aria-label="Giancarlo Peixoto, home" data-pt-aria="Giancarlo Peixoto, início" data-en-aria="Giancarlo Peixoto, home"> 
+        <span class="wordmark-mark">GP</span> 
+        <span class="wordmark-name">Giancarlo Peixoto</span> 
+      </a> 
 
-    <main>
-      <section class="hero">
-        <div class="cartao">
-          <h1 class="titulo-principal" data-pt="Olá — eu sou Giancarlo Julião Neves Peixoto" data-en="Hi — I'm Giancarlo Julião Neves Peixoto">Hi — I'm Giancarlo Julião Neves Peixoto</h1>
-          <p class="subtitulo" data-pt="Sou estudante de Engenharia Informática e procuro oportunidades para aplicar e expandir meus conhecimentos, contribuindo para projetos que unam tecnologia, lógica e impacto real." data-en="I am a Computer Engineering student seeking opportunities to apply and expand my knowledge, contributing to projects that combine technology, logic, and real impact.">
-            I am a Computer Engineering student seeking opportunities to apply and expand my knowledge, contributing to projects that combine technology, logic, and real impact.
-          </p>
+      <div class="header-actions"> 
+        <button class="language-button" id="btn-idioma" type="button" aria-label="Switch to Portuguese">PT</button> 
+        <a class="header-contact" href="#contact" data-pt="Vamos conversar" data-en="Get in touch">Get in touch</a> 
+      </div> 
+    </header> 
 
-          <div class="tags" aria-hidden>
-            <span class="tag">C</span>
-            <span class="tag">C++</span>
-            <span class="tag">Python</span>
-            <span class="tag">Html</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-          </div>
-
-          <section class="highlights">
-            <h2 class="secao-titulo" data-pt="Destaques" data-en="Highlights">Highlights</h2>
-            <div class="highlights-list">
-              <div class="highlight">
-                <strong>+2</strong>
-                <div class="muted" data-pt="projetos em produção" data-en="projects in production">projects in production</div>
-              </div>
-              <div class="highlight">
-                <strong>Part-time</strong>
-                <div class="muted" data-pt="Disponível para trabalho" data-en="Open for work part time">Open for work part time</div>
-              </div>
-            </div>
-          </section>
-
-          <div class="actions-row">
-            <a class="btn" href="#projetos" data-pt="Ver projetos" data-en="See projects">See projects</a>
-            <a class="btn" href="mailto:giancarlojuliao@gmail.com" data-pt="Enviar e-mail" data-en="Email me">Email me</a>
-          </div>
-        </div>
-
-        <aside class="perfil" aria-label="Developer profile">
-          <div class="avatar" role="img" aria-label="Stylized avatar">
-            <img src="foto_perfil.png" alt="">
-          </div>
-          <div class="nome">Giancarlo Julião Neves Peixoto</div>
-          <div class="cargo" data-pt="Estudante de Engenharia Informática — Sistemas de Informação" data-en="Computer Engineering Student — Information Systems">
-            Computer Engineering Student — Information Systems
-          </div>
-          <div class="rede-social" aria-hidden>
-            <a class="icone-redes" href="https://github.com/GiancarloNeves" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a class="icone-redes" href="https://www.linkedin.com/in/giancarlo-peixoto-7b6331380/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a class="icone-redes" href="mailto:giancarlojuliao@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-          <div class="full-width">
-            <a class="btn btn-primary" 
-              href="https://giancarloneves.github.io/Portfolio/CV_GiancarloPeixoto.pdf" 
-              download="CV-Giancarlo_Peixoto.pdf">
-              CV
+    <main id="main"> 
+      <section class="hero" id="top" aria-labelledby="hero-title"> 
+        <div class="hero-copy">
+          <nav class="hero-social-links" aria-label="Links do perfil" data-pt-aria="Links do perfil" data-en-aria="Profile links">
+            <a class="hero-social-link" href="https://github.com/GiancarloNeves" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.35-3.88-1.35-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.68.41.36.77 1.07.77 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              <span>GitHub</span>
             </a>
+            <a class="hero-social-link" href="https://www.linkedin.com/in/giancarlo-peixoto-7b6331380/" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1-.001-4.125 2.062 2.062 0 0 1 .001 4.125zM7.119 20.452H3.555V9H7.12v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="hero-social-link" href="./CV_en.pdf" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 2.75h8l4 4v14.5H6z"/><path d="M14 2.75v4h4M9 12h6M9 15.5h6"/></svg>
+              <span data-pt="Currículo (EN)" data-en="CV (EN)">CV (EN)</span>
+            </a>
+            <a class="hero-social-link" href="./CV_pt.pdf" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 2.75h8l4 4v14.5H6z"/><path d="M14 2.75v4h4M9 12h6M9 15.5h6"/></svg>
+              <span data-pt="Currículo (PT)" data-en="CV (PT)">CV (PT)</span>
+            </a>
+          </nav>
+          <aside class="internship-callout" aria-label="Internship availability" data-pt-aria="Disponibilidade para estágio" data-en-aria="Internship availability">
+            <p class="internship-callout-label" data-pt="À procura de estágio" data-en="Seeking an internship">Seeking an internship</p>
+            <p class="internship-callout-focus" data-pt="IA aplicada e negócios" data-en="Applied AI and business">Applied AI and business</p>
+            <p class="internship-callout-location">
+              <span data-pt="Remoto em todo Portugal" data-en="Remote anywhere in Portugal">Remote anywhere in Portugal</span>
+              <span aria-hidden="true">·</span>
+              <span data-pt="Presencial/híbrido em Coimbra" data-en="On-site/hybrid in Coimbra">On-site/hybrid in Coimbra</span>
+            </p>
+          </aside> 
+          <p class="eyebrow"><span class="eyebrow-number">01</span><span data-pt="Engenharia Informática · Sistemas de Informação" data-en="Computer Engineering · Information Systems">Computer Engineering · Information Systems</span></p> 
+          <h1 id="hero-title" data-pt="Estudante de Engenharia Informática a explorar IA nos negócios." data-en="Computer Engineering student exploring AI in business.">Computer Engineering student exploring AI in business.</h1> 
+          <p class="hero-intro" data-pt="No Instituto Superior de Engenharia de Coimbra, foco-me em Sistemas de Informação. Nos projetos selecionados, trabalhei com diagnóstico por IA, classificação de imagens, modelação de sistemas e dados de negócio." data-en="At Coimbra Institute of Engineering, I focus on Information Systems. In my selected projects, I worked on AI-based diagnosis, image classification, systems modelling, and business data.">
+            At Coimbra Institute of Engineering, I focus on Information Systems. In my selected projects, I worked on AI-based diagnosis, image classification, systems modelling, and business data.
+          </p> 
+          <p class="hero-plain" data-pt="Procuro um estágio onde possa compreender uma necessidade de negócio, contribuir para uma solução técnica e aprender como ela funciona na prática." data-en="I’m looking for an internship where I can understand a business need, contribute to a technical solution, and learn how it works in practice."> 
+            I’m looking for an internship where I can understand a business need, contribute to a technical solution, and learn how it works in practice. 
+          </p> 
+          <div class="hero-actions"> 
+            <a class="button button-dark" href="#work" data-pt="Ver projetos" data-en="Explore my work">Explore my work</a> 
+            <a class="text-link" href="mailto:giancarlojuliao@gmail.com" data-pt="Enviar e-mail" data-en="Email me">Email me <span aria-hidden="true">↗</span></a> 
+          </div> 
+          <p class="availability"><span class="availability-dot" aria-hidden="true"></span><span data-pt="À procura de estágio em IA aplicada, dados ou implementação de soluções." data-en="Looking for internships in applied AI, data, or solution implementation.">Looking for internships in applied AI, data, or solution implementation.</span></p> 
+        </div> 
 
+        <aside class="focus-note" aria-label="Current focus" data-pt-aria="Foco atual" data-en-aria="Current focus"> 
+          <p class="eyebrow"><span data-pt="Onde quero contribuir" data-en="Where I want to contribute">Where I want to contribute</span></p> 
+          <ul class="focus-list"> 
+            <li><span class="focus-index">-</span><span data-pt="IA aplicada" data-en="Applied AI">Applied AI</span></li> 
+            <li><span class="focus-index">-</span><span data-pt="Implementação de soluções" data-en="Solution implementation">Solution implementation</span></li> 
+            <li><span class="focus-index">-</span><span data-pt="Produto e negócio" data-en="Product and business">Product and business</span></li> 
+          </ul> 
+          <div class="note-footer"> 
+            <span>Coimbra, Portugal</span> 
+          </div> 
+        </aside> 
+      </section> 
 
-
-
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-number">02</span><span data-pt="Trabalho selecionado" data-en="Selected work">Selected work</span></p>
+            <h2 id="work-title" data-pt="Projetos onde tecnologia encontra problemas reais." data-en="Projects where technology meets real problems.">Projects where technology meets real problems.</h2>
           </div>
-        </aside>
-      </section>
-
-      <section id="sobre" class="cartao">
-        <h2 class="secao-titulo" data-pt="Sobre mim" data-en="About me">About me</h2>
-        <div class="sobre-grid"> <div> <p data-pt="Sou estudante do 3.º ano de Engenharia Informática na Universidade de Coimbra, com foco em 
-          Sistemas de Informação. Tenho interesse em desenvolvimento web, bancos de dados e Inteligência Artificial, e gosto de aplicar a tecnologia 
-          para resolver problemas de forma criativa e eficiente." data-en="I am a third-year Computer Engineering student at the University of Coimbra, 
-          focusing on Information Systems. I’m interested in web development, databases, and Artificial Intelligence, and enjoy using technology to solve 
-          problems creatively and efficiently."> I am a third-year Computer Engineering student at the University of Coimbra, focusing on Information Systems. 
-          I’m interested in web development, databases, and Artificial Intelligence, and enjoy using technology to solve problems creatively and efficiently. 
-        </p> <ul class="muted-list"> <li data-pt="Local: Coimbra, Portugal" data-en="Location: Coimbra, Portugal">Location: Coimbra, Portugal</li> 
-          <li data-pt="Disponibilidade: Part-time / Contrato" data-en="Availability: Part-time / Contract">Availability: Part-time / Contract</li> 
-          <li data-pt="Contato: giancarlojuliao@gmail.com" data-en="Contact: giancarlojuliao@gmail.com">Contact: giancarlojuliao@gmail.com</li> </ul> 
+          <p class="section-aside" data-pt="IA aplicada, dados, modelação de sistemas e desenvolvimento de produto." data-en="Applied AI, data, systems modelling, and product development.">Applied AI, data, systems modelling, and product development.</p>
         </div>
-  <div class="tools">
-    <div class="tool-list">
-      <strong data-pt="Ferramentas favoritas:" data-en="Favorite tools:">Favorite tools:</strong>
-      <div class="habilidades">
-        <div class="habilidade">C</div>
-        <div class="habilidade">C++</div>
-        <div class="habilidade">Python</div>
-      </div>
-    </div>
 
-    <div class="tool-list">
-      <strong data-pt="Estou me aprofundando em:" data-en="I'm deepening my knowledge in:">I'm deepening my knowledge in:</strong>
-      <div class="habilidades">
-        <div class="habilidade">Python</div>
-        <div class="habilidade">SQL</div>
-        <div class="habilidade">Linux/Unix (Debian)</div>
-        <div class="habilidade">C++</div>
-      </div>
-    </div>
-  </div>
+        <div class="project-list">
+          <article class="project-card project-featured">
+            <div class="project-index-block">
+              <span class="project-number">01</span>
+              <span class="project-type" data-pt="IA aplicada · manutenção preditiva" data-en="Applied AI · predictive maintenance">Applied AI · predictive maintenance</span>
+            </div>
+            <div class="project-content">
+              <h3 data-pt="Diagnóstico de falhas em motores industriais" data-en="Industrial motor failure diagnosis">Industrial motor failure diagnosis</h3>
+              <p class="project-summary" data-pt="Comparei raciocínio baseado em casos (CBR) e redes neuronais feedforward para classificar motores como normais ou com falhas elétricas ou mecânicas." data-en="Compared case-based reasoning (CBR) and feedforward neural networks to classify motors as normal or affected by electrical or mechanical failures.">Compared case-based reasoning (CBR) and feedforward neural networks to classify motors as normal or affected by electrical or mechanical failures.</p>
+              <div class="project-detail-grid">
+                <div>
+                  <h4 data-pt="O desafio" data-en="The question">The question</h4>
+                  <p data-pt="Como transformar dados de operação num diagnóstico útil para a manutenção industrial?" data-en="How can operational data support useful industrial maintenance diagnoses?">How can operational data support useful industrial maintenance diagnoses?</p>
+                </div>
+                <div>
+                  <h4 data-pt="O trabalho" data-en="The work">The work</h4>
+                  <p data-pt="Tratei um conjunto de 5 000 registos e 14 atributos, preparei os dados e comparei os modelos com diferentes configurações de normalização e treino." data-en="Prepared a dataset of 5,000 records and 14 attributes, then compared models using different normalization and training configurations.">Prepared a dataset of 5,000 records and 14 attributes, then compared models using different normalization and training configurations.</p>
+                </div>
+              </div>
+              <ul class="tag-list" aria-label="Ferramentas e métodos" data-pt-aria="Ferramentas e métodos" data-en-aria="Tools and methods">
+                <li>MATLAB</li><li>CBR</li><li data-pt="Redes neuronais" data-en="Neural networks">Neural networks</li><li>CSV</li>
+              </ul>
+            </div>
+          </article>
 
-  <div class="skills-full">
-    <div class="tool-list">
-      <strong data-pt="Habilidades:" data-en="Skills:">Skills:</strong>
-      <div class="habilidades">
-        <div class="habilidade">C</div>
-        <div class="habilidade">C++</div>
-        <div class="habilidade">Bash</div>
-        <div class="habilidade">Python</div>
-        <div class="habilidade">React</div>
-        <div class="habilidade">JavaScript</div>
-        <div class="habilidade">Linux(Debian)</div>
-        <div class="habilidade">SQL</div>
-        <div class="habilidade">HTML</div>
-        <div class="habilidade">CSS</div>
-        <div class="habilidade">Blender</div>
-        <div class="habilidade">Matlab</div>
-        <div class="habilidade">Microsoft Office</div>
-      </div>
-    </div>
-  </div>
-</div>
+          <article class="project-card">
+            <div class="project-index-block">
+              <span class="project-number">02</span>
+              <span class="project-type" data-pt="Aprendizagem automática · visão computacional" data-en="Machine learning · computer vision">Machine learning · computer vision</span>
+            </div>
+            <div class="project-content">
+              <h3 data-pt="HikeFlora — classificação de espécies de plantas" data-en="HikeFlora — plant species classification">HikeFlora — plant species classification</h3>
+              <p class="project-summary" data-pt="Comparei uma MLP com diferentes arquiteturas de CNN para classificar fotografias de cinco espécies de plantas e identificar a que apresentava melhor desempenho." data-en="Compared an MLP with different CNN architectures to classify photos of five plant species and identify which performed best.">Compared an MLP with different CNN architectures to classify photos of five plant species and identify which performed best.</p>
+              <div class="project-detail-grid">
+                <div>
+                  <h4 data-pt="O desafio" data-en="The question">The question</h4>
+                  <p data-pt="Que arquitetura distingue melhor as espécies a partir das imagens?" data-en="Which architecture best distinguishes species from images?">Which architecture best distinguishes species from images?</p>
+                </div>
+                <div>
+                  <h4 data-pt="O trabalho" data-en="The work">The work</h4>
+                  <p data-pt="Preparei as divisões de treino, validação e teste e comparei arquiteturas, dropout e aumento de dados." data-en="Prepared training, validation, and test splits, then compared architectures, dropout, and data augmentation.">Prepared training, validation, and test splits, then compared architectures, dropout, and data augmentation.</p>
+                </div>
+              </div>
+              <ul class="tag-list" aria-label="Ferramentas e métodos" data-pt-aria="Ferramentas e métodos" data-en-aria="Tools and methods">
+                <li>Python 3.12</li><li>TensorFlow</li><li>Pillow</li><li>MLP</li><li>CNN</li>
+              </ul>
+            </div>
+          </article>
 
-      </section>
+          <article class="project-card">
+            <div class="project-index-block">
+              <span class="project-number">03</span>
+              <span class="project-type" data-pt="Engenharia de software · análise e modelação" data-en="Software engineering · analysis and modelling">Software engineering · analysis and modelling</span>
+            </div>
+            <div class="project-content">
+              <h3 data-pt="Espaço Público — modelação e desenho de soluções" data-en="Public Space — solution modelling and design">Public Space — solution modelling and design</h3>
+              <p class="project-summary" data-pt="Analisei problemas de modelação e desenho e estruturei documentação técnica para representar soluções relacionadas com o Espaço Público." data-en="Analysed modelling and design problems and prepared technical documentation to represent solutions related to public spaces.">Analysed modelling and design problems and prepared technical documentation to represent solutions related to public spaces.</p>
+              <div class="project-detail-grid">
+                <div>
+                  <h4 data-pt="O desafio" data-en="The question">The question</h4>
+                  <p data-pt="Como traduzir um problema do domínio em requisitos e modelos compreensíveis?" data-en="How can a domain problem be translated into clear requirements and models?">How can a domain problem be translated into clear requirements and models?</p>
+                </div>
+                <div>
+                  <h4 data-pt="O trabalho" data-en="The work">The work</h4>
+                  <p data-pt="Elaborei modelos de domínio, casos de uso, diagramas de sequência do sistema e diagramas de atividade." data-en="Created domain models, use cases, system sequence diagrams, and activity diagrams.">Created domain models, use cases, system sequence diagrams, and activity diagrams.</p>
+                </div>
+              </div>
+              <ul class="tag-list" aria-label="Métodos de modelação" data-pt-aria="Métodos de modelação" data-en-aria="Modelling methods">
+                <li>UML</li><li data-pt="Modelos de domínio" data-en="Domain models">Domain models</li><li data-pt="Casos de uso" data-en="Use cases">Use cases</li><li data-pt="Diagramas de atividade" data-en="Activity diagrams">Activity diagrams</li>
+              </ul>
+            </div>
+          </article>
 
-      <section id="projetos">
-        <h2 class="secao-titulo" data-pt="Projetos selecionados:" data-en="Selected projects:">Selected projects:</h2>
-        <div class="projetos-grid">
-          <div id="conecta4"><h3><a href="https://GiancarloNeves.github.io/conecta4">Conecta4<img src="conecta4.png"></img></a></h3></div>
-          <div id=""><h3><a href="https://github.com/GiancarloNeves/quiz">Quiz interativo<img src="quiz.png"></img></a></h3></div>
+          <article class="project-card">
+            <div class="project-index-block">
+              <span class="project-number">04</span>
+              <span class="project-type" data-pt="Dados · bases de dados" data-en="Data · databases">Data · databases</span>
+            </div>
+            <div class="project-content">
+              <h3 data-pt="Gestão de voos e bilhética com PL/SQL" data-en="Flight and ticket management with PL/SQL">Flight and ticket management with PL/SQL</h3>
+              <p class="project-summary" data-pt="Implementei lógica de base de dados para distribuir bilhetes, identificar voos sobrelotados e tratar cancelamentos." data-en="Implemented database logic to distribute tickets, identify overbooked flights, and handle cancellations.">Implemented database logic to distribute tickets, identify overbooked flights, and handle cancellations.</p>
+              <div class="project-detail-grid">
+                <div>
+                  <h4 data-pt="O desafio" data-en="The question">The question</h4>
+                  <p data-pt="Como aplicar e manter regras de negócio diretamente na base de dados?" data-en="How can business rules be applied and maintained directly in a database?">How can business rules be applied and maintained directly in a database?</p>
+                </div>
+                <div>
+                  <h4 data-pt="O trabalho" data-en="The work">The work</h4>
+                  <p data-pt="Criei consultas, os procedimentos DISTRIBUTE_TICKETS e MOST_OVERBOOKED_FLIGHT, o trigger CANCEL_TICKETS e estimativas de capacidade de armazenamento." data-en="Created queries, the DISTRIBUTE_TICKETS and MOST_OVERBOOKED_FLIGHT procedures, the CANCEL_TICKETS trigger, and storage capacity estimates.">Created queries, the DISTRIBUTE_TICKETS and MOST_OVERBOOKED_FLIGHT procedures, the CANCEL_TICKETS trigger, and storage capacity estimates.</p>
+                </div>
+              </div>
+              <ul class="tag-list" aria-label="Ferramentas" data-pt-aria="Ferramentas" data-en-aria="Tools">
+                <li>Oracle PL/SQL</li><li>SQL</li><li data-pt="Procedimentos" data-en="Procedures">Procedures</li><li>Triggers</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-index-block">
+              <span class="project-number">05</span>
+              <span class="project-type" data-pt="IA · simulação multiagente" data-en="AI · multi-agent simulation">AI · multi-agent simulation</span>
+            </div>
+            <div class="project-content">
+              <h3 data-pt="Simulação de exploração e recolha de recursos" data-en="Resource exploration and collection simulation">Resource exploration and collection simulation</h3>
+              <p class="project-summary" data-pt="Modelei agentes exploradores e coletores num ambiente partilhado e comparei configurações de comunicação e distribuição de recursos." data-en="Modelled explorer and collector agents in a shared environment and compared communication and resource distribution setups.">Modelled explorer and collector agents in a shared environment and compared communication and resource distribution setups.</p>
+              <div class="project-detail-grid">
+                <div>
+                  <h4 data-pt="O desafio" data-en="The question">The question</h4>
+                  <p data-pt="Como as regras dos agentes e a comunicação influenciam os resultados da exploração?" data-en="How do agent rules and communication influence exploration outcomes?">How do agent rules and communication influence exploration outcomes?</p>
+                </div>
+                <div>
+                  <h4 data-pt="O trabalho" data-en="The work">The work</h4>
+                  <p data-pt="Executei várias simulações e comparei os efeitos de diferentes configurações sobre a recolha de recursos." data-en="Ran multiple simulations and compared how different setups affected resource collection.">Ran multiple simulations and compared how different setups affected resource collection.</p>
+                </div>
+              </div>
+              <ul class="tag-list" aria-label="Ferramentas e métodos" data-pt-aria="Ferramentas e métodos" data-en-aria="Tools and methods">
+                <li>NetLogo</li><li data-pt="Sistemas multiagente" data-en="Multi-agent systems">Multi-agent systems</li><li data-pt="Análise experimental" data-en="Experimental analysis">Experimental analysis</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-index-block">
+              <span class="project-number">06</span>
+              <span class="project-type" data-pt="Em desenvolvimento · jogo online" data-en="In development · online game">In development · online game</span>
+            </div>
+            <div class="project-content">
+              <h3>Coroas e Conflitos</h3>
+              <p class="project-summary" data-pt="Desenvolvo um card game tático de fantasia para 3 a 6 jogadores, com combate, economia e turnos em várias fases." data-en="Developing a tactical fantasy card game for 3 to 6 players, with combat, an economy, and multi-phase turns.">Developing a tactical fantasy card game for 3 to 6 players, with combat, an economy, and multi-phase turns.</p>
+              <div class="project-detail-grid">
+                <div>
+                  <h4 data-pt="O desafio" data-en="The question">The question</h4>
+                  <p data-pt="Como coordenar regras de turnos, combate, interrupções e partidas online entre vários jogadores?" data-en="How can turn rules, combat, interruptions, and online multiplayer be coordinated?">How can turn rules, combat, interruptions, and online multiplayer be coordinated?</p>
+                </div>
+                <div>
+                  <h4 data-pt="O trabalho" data-en="The work">The work</h4>
+                  <p data-pt="Implementei a base de cartas, turnos e economia, combate, interrupções e lobby P2P pela Steam; estão prontos efeitos para 7 das 12 Classes. O restante conteúdo e os elementos visuais continuam em desenvolvimento." data-en="Implemented the card database, turns and economy, combat, interruptions, and a Steam P2P lobby; effects for 7 of 12 Classes are ready. The remaining content and visual assets are in progress.">Implemented the card database, turns and economy, combat, interruptions, and a Steam P2P lobby; effects for 7 of 12 Classes are ready. The remaining content and visual assets are in progress.</p>
+                </div>
+              </div>
+              <ul class="tag-list" aria-label="Ferramentas" data-pt-aria="Ferramentas" data-en-aria="Tools">
+                <li>Godot 4</li><li>GDScript</li><li>GodotSteam</li><li>Steam P2P</li><li>Markdown</li><li>Claude</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
+      <section class="section about-section" id="about" aria-labelledby="about-title"> 
+        <div class="about-copy"> 
+          <p class="eyebrow"><span class="eyebrow-number">03</span><span data-pt="Sobre mim" data-en="A little about me">A little about me</span></p> 
+          <h2 id="about-title" data-pt="Quero perceber como a IA se encaixa no trabalho de uma equipa." data-en="I want to understand how AI fits into a team’s work.">I want to understand how AI fits into a team’s work.</h2> 
+          <p data-pt="Quem precisa dele? Em que processo se encaixa? Como sabemos se está a ajudar? É esse encontro entre tecnologia, contexto de negócio e experiência do utilizador que quero explorar." data-en="Who needs it? Where does it fit into a process? How do we know it helps? I want to explore that meeting point between technology, business context, and user experience.">Who needs it? Where does it fit into a process? How do we know it helps? I want to explore that meeting point between technology, business context, and user experience.</p> 
+          <p class="future-note" data-pt="A longo prazo, quero crescer para funções de arquitetura de soluções, implementação de IA e gestão de produto de IA." data-en="Longer term, I hope to grow into solutions architecture, AI implementation, and AI product roles.">Longer term, I hope to grow into solutions architecture, AI implementation, and AI product roles.</p> 
+        </div> 
 
-      <section id="contato" class="cartao">
-        <h2 class="secao-titulo" data-pt="Contato" data-en="Contact">Contact</h2>
-        <form class="form-contato" action="mailto:giancarlojuliao@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Form submitted (simulation)')">
-          <div class="campo">
-            <label for="nome" data-pt="Nome" data-en="Name">Name</label>
-            <input id="nome" name="nome" placeholder="Giancarlo Julião Neves Peixoto" data-pt-placeholder="Seu nome" data-en-placeholder="Your name" />
-          </div>
-          <div class="campo">
-            <label for="email" data-pt="E-mail" data-en="Email">Email</label>
-            <input id="email" name="email" type="email" placeholder="giancarlojuliao@gmail.com" data-pt-placeholder="Seu e-mail" data-en-placeholder="Your email" />
-          </div>
-          <div class="campo">
-            <label for="mensagem" data-pt="Mensagem" data-en="Message">Message</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Olá, tenho interesse..." data-pt-placeholder="Escreva sua mensagem" data-en-placeholder="Write your message"></textarea>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary" data-pt="Enviar" data-en="Send">Send</button>
-            <button type="reset" class="btn" data-pt="Limpar" data-en="Clear">Clear</button>
-          </div>
-        </form>
-      </section>
-    </main>
+        <div class="background-panel"> 
+          <div class="background-row"> 
+            <span class="background-label" data-pt="Formação" data-en="Education">Education</span> 
+            <div><strong data-pt="Engenharia Informática" data-en="Computer Engineering">Computer Engineering</strong><span data-pt="Instituto Superior de Engenharia de Coimbra · Sistemas de Informação" data-en="Coimbra Institute of Engineering · Information Systems">Coimbra Institute of Engineering · Information Systems</span></div> 
+          </div> 
+          <div class="background-row"> 
+            <span class="background-label" data-pt="Dados e Analytics" data-en="Data & Analytics">Data &amp; Analytics</span> 
+            <div><strong>PL/SQL · Power BI · Microsoft SQL Server · Excel · Python</strong><span data-pt="Modelagem de dados, dashboards de negócio, relatórios estratégicos e ETL" data-en="Data modeling, business dashboards, strategic reporting, and ETL">Data modeling, business dashboards, strategic reporting, and ETL</span></div> 
+          </div> 
+          <div class="background-row"> 
+            <span class="background-label" data-pt="Ferramentas" data-en="Tools">Tools</span> 
+            <div><strong>C · Bash · Linux / Debian</strong><span data-pt="Também: HTML e CSS" data-en="Also: HTML and CSS">Also: HTML and CSS</span></div> 
+          </div> 
+          <div class="background-row"> 
+            <span class="background-label" data-pt="Localização" data-en="Location">Location</span> 
+            <div><strong>Coimbra, Portugal</strong><span data-pt="Disponível para oportunidades de estágio" data-en="Open to internship opportunities">Open to internship opportunities</span></div> 
+          </div> 
+        </div> 
+      </section> 
 
-    <footer>
-      <div>© <span id="ano"></span> Giancarlo Julião Neves Peixoto — <span data-pt="Feito em Portugal" data-en="Made in Portugal">Made in Portugal</span></div>
-    </footer>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title"> 
+        <div> 
+          <p class="eyebrow"><span class="eyebrow-number">04</span><span data-pt="Contato" data-en="Contact">Contact</span></p> 
+          <h2 id="contact-title" data-pt="Vamos falar sobre um problema interessante." data-en="Let’s talk about an interesting problem.">Let’s talk about an interesting problem.</h2> 
+        </div> 
+        <div class="contact-links"> 
+          <a class="contact-email" href="mailto:giancarlojuliao@gmail.com">giancarlojuliao@gmail.com <span aria-hidden="true">↗</span></a> 
+          <div class="social-links"> 
+            <a href="https://github.com/GiancarloNeves" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a> 
+            <a href="https://www.linkedin.com/in/giancarlo-peixoto-7b6331380/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a> 
+            <a href="./CV_en.pdf" target="_blank" rel="noreferrer"><span data-pt="Currículo (EN)" data-en="CV (EN)">CV (EN)</span> <span aria-hidden="true">↗</span></a> 
+            <a href="./CV_pt.pdf" target="_blank" rel="noreferrer"><span data-pt="Currículo (PT)" data-en="CV (PT)">CV (PT)</span> <span aria-hidden="true">↗</span></a> 
+          </div> 
+        </div> 
+      </section> 
+    </main> 
+
+    <footer class="site-footer"> 
+      <span>© <span id="ano"></span> Giancarlo Peixoto</span> 
+      <span data-pt="Coimbra, Portugal" data-en="Coimbra, Portugal">Coimbra, Portugal</span> 
+    </footer> 
+    </div>
   </div>
 
-  <script src="script.js"></script>
-</body>
+  <script src="script.js"></script> 
+</body> 
 </html>
