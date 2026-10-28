@@ -5,9 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <meta name="description" content="Giancarlo Julião Neves Peixoto — Computer Engineering student exploring applied AI, business systems, and product implementation." data-pt-content="Giancarlo Julião Neves Peixoto — estudante de Engenharia Informática interessado em IA aplicada, sistemas de negócio e implementação de produto." data-en-content="Giancarlo Julião Neves Peixoto — Computer Engineering student exploring applied AI, business systems, and product implementation."> 
   <title data-pt-title="Giancarlo Peixoto — IA Aplicada e Sistemas de Informação" data-en-title="Giancarlo Peixoto — Applied AI &amp; Information Systems">Giancarlo Peixoto — Applied AI &amp; Information Systems</title> 
+  <script>
+    try {
+      var savedLanguage = localStorage.getItem('idioma');
+      document.documentElement.setAttribute('data-language-saved', savedLanguage === 'pt' || savedLanguage === 'en' ? 'true' : 'false');
+    } catch (error) {
+      document.documentElement.setAttribute('data-language-saved', 'false');
+    }
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head> 
-<body> 
+<body>
+  <div class="language-overlay" id="language-overlay" aria-hidden="false">
+    <section class="language-dialog" id="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-dialog-title" aria-describedby="language-dialog-description">
+      <span class="language-dialog-kicker">Welcome · Bem-vindo</span>
+      <h2 id="language-dialog-title"><span lang="pt">Escolha o idioma</span><span class="language-title-divider" aria-hidden="true"> / </span><span lang="en">Choose your language</span></h2>
+      <p class="language-dialog-description" id="language-dialog-description"><span lang="pt">Selecione o idioma para continuar.</span> <span lang="en">Select a language to continue.</span></p>
+      <div class="language-options">
+        <button class="language-option" type="button" data-language-choice="pt" lang="pt">
+          <span class="language-option-copy"><span class="language-option-name">Português</span><span class="language-option-note">Continuar em português</span></span>
+          <span class="language-option-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="language-option" type="button" data-language-choice="en" lang="en">
+          <span class="language-option-copy"><span class="language-option-name">English</span><span class="language-option-note">Continue in English</span></span>
+          <span class="language-option-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <p class="language-dialog-footnote">You can change this anytime in the top navigation. <span lang="pt">Pode alterar esta opção a qualquer momento na navegação superior.</span></p>
+    </section>
+  </div>
   <a class="skip-link" href="#main" data-pt="Ir para o conteúdo" data-en="Skip to content">Skip to content</a> 
 
   <div class="page-layout">

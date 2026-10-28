@@ -689,3 +689,154 @@ html { scroll-padding-top: 82px; }
 .hero-social-link:nth-last-child(-n+2) svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
 @media (max-width: 760px) { .hero { padding-top: 42px; } }
 @media (max-width: 460px) { .hero { padding-top: 32px; } }
+
+/* First-visit language choice */
+html[data-language-saved="false"] { overflow: hidden; }
+html[data-language-saved="false"] .language-overlay { display: grid; }
+.language-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  place-items: center;
+  padding: 24px;
+  background: rgba(25, 35, 30, 0.42);
+  backdrop-filter: blur(7px);
+  animation: language-overlay-in 220ms ease both;
+}
+html[data-language-saved="true"] .language-overlay,
+.language-overlay[hidden] { display: none !important; }
+.language-overlay.is-closing { animation: language-overlay-out 180ms ease both; }
+.language-dialog {
+  width: min(100%, 460px);
+  padding: clamp(25px, 6vw, 40px);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgba(22, 32, 27, 0.22);
+  animation: language-dialog-in 260ms cubic-bezier(.2, .75, .3, 1) both;
+}
+.language-dialog-kicker {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.language-dialog h2 {
+  margin: 16px 0 10px;
+  font-size: clamp(30px, 7vw, 38px);
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+}
+.language-title-divider { color: var(--rust); }
+.language-dialog-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.language-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 25px;
+}
+.language-option {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+}
+.language-option:hover {
+  transform: translateY(-2px);
+  border-color: var(--green);
+  background: #fffefa;
+}
+.language-option-copy { display: grid; gap: 3px; }
+.language-option-name { font-family: var(--serif); font-size: 20px; line-height: 1.2; }
+.language-option-note { color: var(--muted); font-size: 10px; line-height: 1.35; }
+.language-option-arrow { color: var(--green); font-size: 17px; }
+.language-dialog-footnote {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+@keyframes language-overlay-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes language-overlay-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes language-dialog-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 420px) {
+  .language-overlay { padding: 16px; }
+  .language-options { grid-template-columns: 1fr; gap: 8px; margin-top: 20px; }
+  .language-option { min-height: 68px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .language-overlay, .language-dialog { animation: none; }
+  .language-overlay.is-closing { animation: none; }
+  .language-option { transition: none; }
+}
+/* Frosted-glass language choice */
+.language-overlay {
+  background: rgba(25, 35, 30, 0.27);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+}
+.language-dialog {
+  width: min(100%, 420px);
+  padding: clamp(25px, 6vw, 34px);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-top: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 20px;
+  background: rgba(251, 250, 246, 0.78);
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+  box-shadow: 0 24px 80px rgba(22, 32, 27, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+.language-dialog h2 {
+  display: grid;
+  gap: 5px;
+  margin-top: 14px;
+  font-size: clamp(29px, 7vw, 35px);
+}
+.language-dialog h2 [lang="en"] {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 550;
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+.language-title-divider { display: none; }
+.language-options { gap: 9px; margin-top: 22px; }
+.language-option {
+  min-height: 64px;
+  padding: 11px 15px;
+  border-color: rgba(49, 92, 72, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.48);
+}
+.language-option:hover {
+  border-color: var(--green);
+  background: rgba(49, 92, 72, 0.09);
+  color: var(--green-dark);
+}
+.language-option-note { font-size: 9px; }
+.language-dialog-footnote { margin-top: 15px; }
+@media (max-width: 420px) {
+  .language-dialog { border-radius: 17px; }
+  .language-options { gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .language-overlay, .language-dialog { animation: none; }
+}
